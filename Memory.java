@@ -43,6 +43,7 @@ public class Memory implements AutoCloseable {
 		if(data == null) {
 			throw new Win32Exception("Failed to read memory");
 		}
+		// Java uses Little Endian encoding, so we must make sure that we use the correct byte order
 		return ByteBuffer.wrap(data).order(ByteOrder.LITTLE_ENDIAN);
 	}
 	
