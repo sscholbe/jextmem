@@ -8,6 +8,10 @@ public class Memory implements AutoCloseable {
 		System.loadLibrary("extmem");
 	}
 	
+	/*
+	 * Native functions (which are implemented in the library)
+	 */
+	
 	private static native long openProcess(String windowTitle) throws Win32Exception;
 	
 	private static native void closeProcess(long handle) throws Win32Exception;
