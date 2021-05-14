@@ -1,5 +1,5 @@
 # jextmem
-This is an incomplete part of an older project and can not be compiled as such. It allows to read memory of an external process from Java using the Java Native Interface (JNI). For a quite a long time, Anti-Cheats in video games struggled with detecting Java-based cheats. This code demonstrates how such a cheat could access memory outside of the VM using the JNI. Using the `Memory` this becomes as easy as
+This is an incomplete part of an old project and can not be compiled as such. It allows to read memory of an external process from Java using the Java Native Interface (JNI). For a quite a long time, Anti-Cheats in video games struggled with detecting Java-based cheats. This code demonstrates how such a cheat could access memory outside of the VM using the JNI. Using the `Memory` this becomes as easy as
 
 ```java
 try (Memory mem = new Memory("Battlefield 4")) {
